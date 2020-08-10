@@ -9,7 +9,7 @@ context.keys().forEach(r => {
     const { default: routes } = context(r);
     routeList = routeList.concat(routes);
 });
-routeList.push({ path: '/', redirect: { name: 'home' } });
+// routeList.push({ path: '/', redirect: { name: 'home' } });
 
 
 const router = new Router({

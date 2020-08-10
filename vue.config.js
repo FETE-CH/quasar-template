@@ -8,7 +8,12 @@ module.exports = {
     productionSourceMap: debug,
     css: {
         extract: !debug,
-        sourceMap: debug
+        sourceMap: debug,
+        loaderOptions: {
+            sass: {
+                prependData: `@import '@/styles/quasar.variables.scss';`,
+            },
+        },
     },
     chainWebpack: config => {
         config.resolve.symlinks(true);
@@ -17,11 +22,20 @@ module.exports = {
         if (!debug) {
             return {
                 optimization: {
-                    minimize: true
-                }
+                    minimize: true,
+                },
             };
         } else {
             config.devtool = 'source-map';
         }
-    }
+    },
+    pluginOptions: {
+        quasar: {
+            importStrategy: 'kebab',
+            rtlSupport: false,
+        },
+    },
+    transpileDependencies: [
+        'quasar',
+    ],
 };

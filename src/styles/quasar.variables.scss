@@ -1,0 +1,18 @@
+// It's highly recommended to change the default colors
+// to match your app's branding.
+
+$primary: #0099ff;
+$secondary: #26A69A;
+$accent: #e03997;
+
+$dark: #303133;
+
+$positive: #8dc63f;
+$negative: #ff4800;
+$info: #909399;
+$warning: #f37b1d;
+$typography-font-family: "PingFang SC", "Noto Sans SC", "Helvetica Neue", Helvetica, "Hiragino Sans", "Microsoft YaHei", Arial, sans-serif;
+
+@import '~quasar/src/css/variables.sass';
+
+$textColor: #565759;

@@ -4,7 +4,8 @@ import router from './plugins/router';
 import api from './plugins/api';
 import np from 'nprogress';
 import 'nprogress/nprogress.css';
-import './style/reset.css';
+import './styles/reset.css';
+import './plugins/quasar';
 import { optionalChaining } from './lib/utils';
 
 Vue.config.productionTip = false;
