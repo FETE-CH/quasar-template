@@ -17,7 +17,7 @@ Vue.use(Quasar, {
             progress: true,
             timeout: 2000,
             textColor: 'white',
-            color: '#909399'
+            color: '#909399',
         },
         loading: {
             spinner: QSpinnerBall,
@@ -25,16 +25,17 @@ Vue.use(Quasar, {
             backgroundColor: 'white',
             spinnerSize: 100,
             message: '加载中',
-            messageColor: 'primary'
-        }
+            messageColor: 'primary',
+        },
     },
-    components: { /* not needed if importStrategy is not 'manual' */ },
-    directives: { /* not needed if importStrategy is not 'manual' */ },
+    components: {},
+    directives: {},
     plugins: {
         Dialog,
         Loading,
-        Notify
+        Notify,
     },
     lang: lang,
-    iconSet: iconSet
+    iconSet: iconSet,
+    cssAddon: true,
 });

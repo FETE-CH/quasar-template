@@ -10,7 +10,7 @@ module.exports = {
         extract: !debug,
         sourceMap: debug,
         loaderOptions: {
-            sass: {
+            scss: {
                 prependData: `@import '@/styles/quasar.variables.scss';`,
             },
         },
